@@ -134,6 +134,21 @@ button:hover {
     background: transparent; /* Ensures the image has a transparent background */
 }
 
+/* Contact Section */
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    margin-top: 20px;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
