@@ -122,38 +122,17 @@ button:hover {
     background-color: #0077b6;
 }
 
-/* Style the image */
+/* Make the image responsive and not too big */
 .drilling-rig-img {
-    max-width: 100%;      /* Ensures the image is responsive */
-    height: auto;         /* Keeps the aspect ratio intact */
-    margin-top: 1rem;     /* Adds space above the image */
-    border-radius: 8px;   /* Adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    width: 100%;           /* Ensures the image takes up the full width */
+    max-width: 800px;      /* You can set a max width for the image */
+    height: auto;          /* Maintains the aspect ratio */
+    margin: 2rem auto;     /* Centers the image with some spacing around it */
+    display: block;        /* Makes sure the image is displayed as a block element */
+    border-radius: 8px;    /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    background: transparent; /* Ensures the image has a transparent background */
 }
-
-/* Image container */
-.image-container {
-    position: relative;
-    display: inline-block;
-}
-
-.image-container img {
-    width: 100%; /* Full-width image */
-    height: auto;
-}
-
-.image-overlay {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
