@@ -122,6 +122,39 @@ button:hover {
     background-color: #0077b6;
 }
 
+/* Style the image */
+.drilling-rig-img {
+    max-width: 100%;      /* Ensures the image is responsive */
+    height: auto;         /* Keeps the aspect ratio intact */
+    margin-top: 1rem;     /* Adds space above the image */
+    border-radius: 8px;   /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%; /* Full-width image */
+    height: auto;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
