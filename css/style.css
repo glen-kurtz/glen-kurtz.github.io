@@ -5,50 +5,136 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 2rem;
+}
+
+/* Header */
 header {
-    background: #333;
+    background: #0077b6;
     color: white;
     padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
-    text-align: center;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 20px;
+    margin: 0 2rem;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #90e0ef;
+    color: #03045e;
+    border-radius: 5px;
 }
 
+/* Main Section */
 section {
+    max-width: 1100px;
+    margin: 2rem auto;
     padding: 2rem;
-    margin: 0 auto;
-    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h1 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #333;
+    background: #0077b6;
     color: white;
+    margin-top: 2rem;
+    border-top: 3px solid #00b4d8;
 }
 
-footer p {
-    margin: 0;
+/* Buttons */
+button {
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0077b6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 1rem 0;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
 }
