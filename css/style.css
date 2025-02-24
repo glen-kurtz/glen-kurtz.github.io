@@ -18,6 +18,16 @@ body {
     padding: 0 2rem;
 }
 
+/* Remove bullets from lists */
+ul {
+    list-style-type: none;  /* Removes the bullet points */
+    padding-left: 0;        /* Removes the default padding */
+}
+
+ul li {
+    margin-bottom: 1rem;    /* Adds space between each list item */
+}
+
 /* Header */
 header {
     background: #0077b6;
@@ -83,6 +93,7 @@ section p {
     font-size: 1.2rem;
     color: #555;
 }
+
 
 /* Footer */
 footer {
