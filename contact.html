@@ -14,6 +14,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us - Funkee Drilling</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 500px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -34,14 +50,14 @@
             <li>Email: contact@funkeedrilling.com</li>
         </ul>
         <p>If you have any questions, please fill out the form below, and we'll get back to you as soon as possible.</p>
-        
+
         <!-- Google Form Embed -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2iajtIYXEsjRHQJ9toS2EWB7p1Hp_JlYVI9l_mXfA_ChBUg/viewform?usp=sharing" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        
+        <div class="contact-form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2iajtIYXEsjRHQJ9toS2EWB7p1Hp_JlYVI9l_mXfA_ChBUg/viewform?usp=sharing" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+
     </section>
         <img src="images/drilling-rig.png" alt="Drilling Rig" class="drilling-rig-img">
-    </section>
-
     <footer>
         <p>&copy; 2025 Funkee Drilling</p>
     </footer>
