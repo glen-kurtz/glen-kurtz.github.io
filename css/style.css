@@ -228,9 +228,8 @@ button:hover {
 iframe {
     border: none;
     width: 100%;
-    max-width: 800px;
-    height: 600px;
-    margin-top: 20px;
+    height: 600%;
+    overflow: hidden;
 }
 
 
